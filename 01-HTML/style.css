@@ -1,0 +1,163 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main-section {
+    width: 1440px;
+    height: 1024px;
+    background-color: #eff2f9;
+}
+
+.card {
+    width: 1170px;
+    height: 800px;
+    box-shadow: 20px 20px 40px 0 rgba(81, 91, 117, 0.25);
+    background: #fff;
+    padding: 60px 0 70px;
+}
+
+.preview {
+    width: 80px;
+    height: 80px;
+    background: #fff;
+}
+
+.preview.selected {
+    box-shadow: 8px 8px 16px 0 rgba(81, 91, 117, 0.25);
+
+}
+
+.product-images-block {
+    border-right: 2px solid rgba(20, 20, 20, 0.15);
+    width: 540px;
+
+}
+
+.content { 
+    padding: 0 60px;
+}
+
+.card-title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 38px;
+    letter-spacing: 0.01em;
+    color: rgba(20, 20, 20, 0.9);
+    margin-bottom: 5px;
+    
+}
+
+.subtitle {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.01em;
+    color: rgba(20, 20, 20, 0.4);
+    margin-bottom: 60px;
+    display: inline-block;
+}
+
+.descrtiption {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    letter-spacing: 0.01em;
+    color: rgba(20, 20, 20, 0.7);
+    margin-bottom: 65px;
+}
+
+h2.title {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: rgba(20, 20, 20, 0.4);
+    margin-bottom: 20px;
+}
+
+.color-options {
+    margin-bottom: 65px;
+}
+
+.color-item {
+    border-radius: 100%;
+    background-color: #fff;
+    height: 30px;
+    width: 30px;
+}
+
+.color-item.selected {
+    box-shadow: 2px 2px 6px 0 rgba(81, 91, 117, 0.25);
+}
+
+.circle {
+    border-radius: 100%;
+    box-shadow: 2px 2px 4px 0 rgba(81, 91, 117, 0.25);
+    height: 16px;
+    width: 16px;
+}
+
+.circle.blue {
+    background-color: #013c7d;   
+}
+
+.circle.green {
+    background-color: #63cba7;   
+}
+
+.circle.red {
+    background-color:  #d52f29;  
+}
+
+.circle.black {
+    background-color:  #141414;  
+}
+
+.circle.yellow {
+    background-color:  #f2c723;  
+}
+
+.quantity {
+    width: 80px;
+    height: 24px;
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: rgba(20, 20, 20, 0.8); 
+    border: none;
+    appearance: none;
+
+
+    background-image: url(./assets/images/ph_caret-down-bold.svg);
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+.price {
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
+font-size: 20px;
+letter-spacing: 0.01em;
+text-transform: uppercase;
+color: rgba(20, 20, 20, 0.8);
+}
+
+.btn {
+    width: 510px;
+height: 70px;
+background-color: #141414;
+font-family: "Rubik", sans-serif;
+font-weight: 500;
+font-size: 18px;
+letter-spacing: 0.01em;
+color: #fff;
+border: none;
+margin-top: 75px;
+}
+
+
