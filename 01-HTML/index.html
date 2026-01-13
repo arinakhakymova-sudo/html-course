@@ -1,24 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:ital,wght@0,700;1,700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:ital,wght@0,700;1,700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
+
+
   <body>
     <section class="main-section">
       <div class="card">
         <div class="product-images-block">
-          <img width="300" height="322" src="./assets/images/main-image.png" alt="mainImage" />
-          <div class="preview selected">
-            <img src="./assets/images/image2.png" alt="image2" />
+          <div class="main-img-wrap">
+            <img width="300" height="322" src="./assets/images/main-image.png" alt="mainImage" />
+          </div>
+          <div class="previews-wraper">
+            <div class="preview selected">
+            <img src="./assets/images/image2correct.png" alt="image2" />
           </div>
           <div class="preview">
             <img src="./assets/images/image3.png" alt="image3" />
+          </div>
           </div>
         </div>
         <div class="content">
@@ -31,7 +41,7 @@
           </p>
           <div class="color-options">
             <h2 class="title">Color options</h2>
-            <ul>
+            <ul class="colors">
               <li class="color-item selected">
                 <div class="circle blue"></div>
               </li>
@@ -49,20 +59,28 @@
               </li>
             </ul>
           </div>
-          <div>
-            <h2 class="title">Quantity</h2>
-            <select class="quantity" id="quantity">
+
+          <div class="wrapper">
+
+            <div>
+              <h2 class="title">Quantity</h2>
+              <select class="quantity" id="quantity">
               <option>1</option>
               <option>2</option>
               <option>3</option>
             </select>
+          
           </div>
           <div>
             <h2 class="title">Price</h2>
-            <span class=price">eur 39,00</span>
+            <span class="price">eur 39,00</span>
+
+          </div>
+
           </div>
           <button class="btn" >Add To Basket</button>
         </div>
+
       </div>
     </section>
   </body>

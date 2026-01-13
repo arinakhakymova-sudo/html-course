@@ -4,10 +4,17 @@
     box-sizing: border-box;
 }
 
+ul {
+    list-style-type: none;
+}
+
 .main-section {
     width: 1440px;
     height: 1024px;
     background-color: #eff2f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .card {
@@ -16,23 +23,45 @@
     box-shadow: 20px 20px 40px 0 rgba(81, 91, 117, 0.25);
     background: #fff;
     padding: 60px 0 70px;
+    display: flex;
+}
+
+.main-img-wrap {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.previews-wraper {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+
 }
 
 .preview {
     width: 80px;
     height: 80px;
-    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
 }
 
+.preview:hover,
 .preview.selected {
     box-shadow: 8px 8px 16px 0 rgba(81, 91, 117, 0.25);
-
 }
+
 
 .product-images-block {
     border-right: 2px solid rgba(20, 20, 20, 0.15);
-    width: 540px;
-
+    min-width: 540px;
+    display: flex;
+    flex-direction: column;
 }
 
 .content { 
@@ -83,13 +112,22 @@ h2.title {
     margin-bottom: 65px;
 }
 
+.colors {
+    display: flex;
+    gap: 40px;
+}
+
 .color-item {
     border-radius: 100%;
     background-color: #fff;
     height: 30px;
     width: 30px;
+    padding: 7px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
 
+.color-item:hover, 
 .color-item.selected {
     box-shadow: 2px 2px 6px 0 rgba(81, 91, 117, 0.25);
 }
@@ -121,6 +159,14 @@ h2.title {
     background-color:  #f2c723;  
 }
 
+.wrapper {
+display: flex;
+}
+
+.wrapper > div {
+    flex-grow: 1;
+}
+
 .quantity {
     width: 80px;
     height: 24px;
@@ -135,7 +181,8 @@ h2.title {
 
     background-image: url(./assets/images/ph_caret-down-bold.svg);
     background-repeat: no-repeat;
-    background-position: right center;
+    background-position: right top 50%;
+    cursor: pointer;
 }
 
 .price {
@@ -158,6 +205,10 @@ letter-spacing: 0.01em;
 color: #fff;
 border: none;
 margin-top: 75px;
+cursor: pointer;
+transition: all 0.3s ease-in-out;
 }
 
-
+.btn:hover {
+    transform: scale(1.2)
+}
